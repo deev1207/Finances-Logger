@@ -11,7 +11,7 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "bung bilder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "docs",
             "index": "src/index.html",
