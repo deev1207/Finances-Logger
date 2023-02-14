@@ -49,12 +49,7 @@ export class AppComponent {
       
     }
     else{
-      this.entries.push({
-        type:this.type,
-        ToFrom: this.ToFrom,
-        Details:this.Details,
-        Amount:this.Amount
-      })
+      this.entries.splice(0,0,{type:this.type,ToFrom:this.ToFrom,Details:this.Details,Amount:this.Amount});
     }
   }
    
