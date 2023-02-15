@@ -51,9 +51,16 @@ export class AppComponent {
     else{
       this.entries.splice(0,0,{type:this.type,ToFrom:this.ToFrom,Details:this.Details,Amount:this.Amount});
     }
+
+        this.type="Invoice",
+        this.ToFrom ="",
+        this.Details="",
+        this.Amount='';
+
   }
    
    delete(index:number){
+    document.getElementById('Id'+index)!.style.background='red';
     this.bool=true;
     this.history.push({
       info:this.entries[index],
@@ -74,11 +81,11 @@ export class AppComponent {
       this.bool3=!this.bool3;
       console.log(index);
       console.log(document.getElementById('Id'+index));
-      if(document.getElementById('Id'+index)!.style.color=='red'){
+      if(document.getElementById('Id'+index)!.style.color=='yellow'){
         document.getElementById('Id'+index)!.style.color='black'
       }
       else{
-        document.getElementById('Id'+index)!.style.color='red'
+        document.getElementById('Id'+index)!.style.color='yellow'
       }
       this.type=this.entries[index].type,
       this.ToFrom =this.entries[index].ToFrom,
