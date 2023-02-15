@@ -91,17 +91,13 @@ export class AppComponent {
       this.ToFrom =this.entries[index].ToFrom,
       this.Details=this.entries[index].Details,
       this.Amount=this.entries[index].Amount
-      if(this.bool3===true){
-        document.getElementById('add')!.innerHTML='Add Edited Entry';
-
-      }
-      else{
-        document.getElementById('add')!.innerHTML='Add';
+      if(this.bool3===false){
         this.type="Invoice",
         this.ToFrom ="",
         this.Details="",
         this.Amount='';
       }
+     
       
       this.index=index;
     }
