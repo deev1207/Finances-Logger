@@ -9,7 +9,7 @@
       <li  *ngIf="entry.type==='Payment'" >
   
         {{entry.ToFrom}} is owed {{entry.Amount}} for {{entry.Details}}
-        <i class="fa fa-trash-o" style="font-size:24px;color:red" (click)="delete(index)" id="{{'Del'+index}}"></i>
+        <i class="fa fa-trash-o del" style="font-size:24px;color:red" (click)="delete(index)" id="{{'Del'+index}}"></i>
         <i class='fa fa-pencil edit' (click)="edit(index)" style='font-size:24px' id="{{'Id'+index}}"></i>
         <!-- <button class='edit' (click)="edit(index)">Edit Entry</button> -->
       </li>
