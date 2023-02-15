@@ -48,10 +48,10 @@
         <label>Amount (£):</label>
         <input type="text" name="amount" [(ngModel)]='Amount' id='amt'> 
       </div>
+      <div class="field"><i class="gg-add-r test" (click)="add()" id='add'></i></div>
       <div class="field2"><br>
-        <button class='button' type="submit" (click)="add()" id='add'>Add Entry</button>
         <button class='button'type="reset" (click)="remove()" *ngIf='!bool2'>Clear All</button>
-        <button class='button' type="reset" (click)="undo()" *ngIf='bool'>Undo Delete</button>
+        <button class='button'type="reset" (click)="undo()" *ngIf='bool'>Undo Delete</button>
         <button class='button' type="reset" (click)="undoAll()" *ngIf='bool2'>Undo Clear All</button>
       </div>
       <!-- <i class="fa fa-trash-o" style="font-size:24px;color:red"></i> -->
