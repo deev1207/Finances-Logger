@@ -79,6 +79,7 @@ export class AppComponent {
 
     edit(index:number){
       this.bool3=!this.bool3;
+      this.index=index;
       console.log(index);
       console.log(document.getElementById('Id'+index));
       if(document.getElementById('Id'+index)!.style.color=='yellow'){
@@ -97,14 +98,14 @@ export class AppComponent {
         this.Details="",
         this.Amount='';
       }
-     
       
-      this.index=index;
+      
+    
     }
 
     addEdited(index:number){
       document.getElementById('Id'+index)!.style.color='black';
-
+      this.bool3=!this.bool3;
       this.entries[index].type=this.type;
       this.entries[index].ToFrom=this.ToFrom;
       this.entries[index].Details=this.Details;
