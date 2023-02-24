@@ -107,8 +107,8 @@ body{
     background-color: yellow;
 }
 
-.test{
-  transform: translate(-3px,6px);
+.add{
+  transform: translate(-3px,4px);
  }
 
  .field1{
