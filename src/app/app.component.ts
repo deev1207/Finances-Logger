@@ -141,3 +141,5 @@ toggle(){
 }
 
 }
+
+//to deploy ng build --output-path docs --base-href https://deev1207.github.io/Finances-Logger/ 
